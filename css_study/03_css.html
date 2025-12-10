@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS 자식 선택자</title>
+        <style>
+            #container {
+                border: 1px solid violet;
+                padding: 5px 10px 20px 40px;
+                border-radius: 15px;
+            }
+
+            #container > p > span {
+                font-size: 18px;
+                color: tomato;
+            }
+
+            #container > p:nth-child(2) > span {
+                border: 1px solid black;
+            }
+
+            #container > p:nth-child(3), p:nth-child(4) {
+                text-decoration: underline yellowgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>자식 선택자</h3>
+        <div id="container">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, velit consequatur molestiae id
+                fugit ut asperiores corrupti laborum! <span>Architecto optio rem ducimus.</span> Porro, perferendis ratione. Enim
+                recusandae assumenda dolores quae.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, velit consequatur molestiae id
+                fugit ut asperiores corrupti laborum! <span>Architecto optio rem ducimus.</span> Porro, perferendis ratione. Enim
+                recusandae assumenda dolores quae.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, velit consequatur molestiae id
+                fugit ut asperiores corrupti laborum! <span>Architecto optio rem ducimus.</span> Porro, perferendis ratione. Enim
+                recusandae assumenda dolores quae.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, velit consequatur molestiae id
+                fugit ut asperiores corrupti laborum! <span>Architecto optio rem ducimus.</span> Porro, perferendis ratione. Enim
+                recusandae assumenda dolores quae.
+            </p>
+        </div>
+    </body>
+</html>
