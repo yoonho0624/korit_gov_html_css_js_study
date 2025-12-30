@@ -23,7 +23,7 @@ window.onload = async () => {
     		        <td><a href="post.html?postId=${post.id}">${post.title}</a></td>
     		        <td>${post.userId}</td>
     		    </tr>
-    		    `;
+    		    `; 
     		  })
     		  .join("")}
 			</tbody>

@@ -130,3 +130,4 @@ const useState = (data) => {
 const [value, setValue] = useState(10);
 console.log(value)
 setValue(20)
+
